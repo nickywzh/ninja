@@ -264,7 +264,7 @@ module.exports = class User {
     }
     this.cookie = env.value;
 
-    const remarks = `remark=${this.remark};`;
+    const remarks = `${this.remark};`;
 
     const updateEnvBody = await updateEnv(this.cookie, this.eid, remarks);
     if (updateEnvBody.code !== 200) {
