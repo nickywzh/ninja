@@ -25,7 +25,8 @@ jobs:
           cd ..
           cd ..
           cd frontend
-          npm install
+          npm install -g pnpm
+          pnpm install
           npm run build
           
       - name: Commit changes
